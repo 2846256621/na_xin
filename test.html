@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn1" onmousedown="getEvent(event)">一号</button>
+<button id="btn2" onmousedown="getEvent(event)">二号</button>
+<script>
+    var btn = document.getElementById("btn1");
+    function getEvent(event)
+    {
+        x=event.target;
+        console.log(x.id);
+        if(x.id === "btn1"){
+            btn.style.fontSize = '20px';
+            btn.style.backgroundColor = "#ffd84b";
+        }
+        else{
+            btn.style.fontSize = '';
+            btn.style.backgroundColor = "";
+        }
+   }
+</script>
+<body >
+
